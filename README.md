@@ -110,7 +110,7 @@ Base leve e modular projetada para crescer junto com a sua aplicação.
 Escolha uma opção:
 1. Criar arquivo
 2. Zimbo Run / auto-save
-5. Sair
+3. Sair
 Opção: 2
 
 🚀 Zimbo Server Inicializado!
@@ -137,7 +137,7 @@ gem build zimbo.gemspec
 gem 'zimbo', path: '.'
 ```
 
-### Quando publicada no RubyGems
+### No RubyGems
 
 ```bash
 gem install zimbo
