@@ -31,6 +31,7 @@ O objetivo é um só:
 
 > **Economizar seu tempo para que você possa focar no desenvolvimento do seu software.**
 
+
 ---
 
 # ✨ Funcionalidades
@@ -121,8 +122,6 @@ Hello, World!
 🔄 Alteração detectada! Reinicializando o script...
 Hello, Zimbo!
 ```
-
----
 
 # 📦 Instalação
 
