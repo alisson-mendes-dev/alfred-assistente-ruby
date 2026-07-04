@@ -12,12 +12,12 @@ module Alfred
       puts "1. Criar arquivo"
       puts "2. Sair"
       print "Opção: "
-      opcao = gets.chomp.to_i
+      opcao = STDIN.gets.chomp
 
       case opcao
-      when 1
+      when "1"
         self.criar_arquivo
-      when 2
+      when "2"
         puts "Saindo..."
         exit
       else
@@ -33,7 +33,7 @@ module Alfred
       File.open(path, 'a') do |file|
         loop do
           print "Digite o nome da gem (ou '0' para sair): "
-          gem_name = gets.chomp.strip
+          gem_name = opcao = STDIN.gets.chomp
           break if gem_name == "0"
           next if gem_name.empty?
 
@@ -58,13 +58,13 @@ module Alfred
       path = File.join(Dir.pwd, 'Gemfile')
       puts "Você está na: #{Dir.pwd}"
       print "Digite 1 para criar o Gemfile aqui: "
-      opcao = gets.chomp
+      opcao = STDIN.gets.chomp
 
       if opcao == "1"
         if File.exist?(path)
           puts "⚠️ Arquivo Gemfile já existe."
         else
-          File.open(path, 'w') do |file|
+          File.open(path, 'a') do |file|
             file.puts "source \"https://rubygems.org\""
           end
           puts "✅ Gemfile criado com sucesso!"
