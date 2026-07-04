@@ -1,5 +1,5 @@
 Gem::Specification.new do |spec|
-  spec.name          = "alfred"
+  spec.name          = "alfred-flow"
   spec.version       = "0.1.0"
   spec.authors       = ["Alisson"] # Coloque seu nome aqui
   spec.email         = ["alissonmendesw3@gmail.com"] # Opcional, mas recomendado
@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.files         = Dir["lib/**/*.rb", "bin/*", "README.md", "LICENSE.txt"]
   
   # Define o executável que será instalado no PATH do sistema
-  spec.executables   = ["alfred"] 
+  spec.executables   = ["alfred-flow"] 
   
   # Certifique-se de que o diretório executável é o correto
   spec.bindir        = "bin"
