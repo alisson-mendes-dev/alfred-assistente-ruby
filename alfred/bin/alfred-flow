@@ -1,6 +1,0 @@
-#!/usr/bin/env ruby
-
-require "alfred/classes" # Carrega a classe Alfred[cite: 5]
-require "alfred/main"    # Carrega o menu e Actions[cite: 5]
-
-Alfred::Alfred.new.iniciar # Inicia o fluxo principal

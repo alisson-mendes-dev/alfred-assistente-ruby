@@ -1,13 +1,10 @@
-
 <div align="center">
 
+# 🚀 Zimbo!
 
+### Seu microframework e assistente de automação para projetos Ruby
 
-# 🤖 Alfred
-
-### Seu assistente de linha de comando para projetos Ruby
-
-**Automatize tarefas repetitivas. Configure projetos em segundos. Foque no que realmente importa: escrever código.**
+**Automatize tarefas repetitivas. Monitore seus arquivos em tempo real. Foque no que realmente importa: escrever código.**
 
 <p align="center">
 
@@ -24,11 +21,11 @@
 
 ---
 
-# 🚀 O que é o Alfred?
+# 🚀 O que é o Zimbo?
 
-O **Alfred** é um assistente de linha de comando (CLI) desenvolvido em Ruby para automatizar tarefas repetitivas durante o desenvolvimento de aplicações.
+O **Zimbo** é uma ferramenta de linha de comando (CLI) desenvolvida em Ruby criada inicialmente para automatizar o gerenciamento de dependências e evoluindo para se tornar um microframework completo.
 
-Em vez de editar arquivos manualmente, instalar dependências uma a uma ou repetir sempre o mesmo processo ao iniciar um projeto, o Alfred faz tudo isso por você através de uma interface simples, intuitiva e interativa.
+Com o Zimbo, você não precisa ficar salvando e reiniciando seus scripts manualmente ou configurando Gemfiles do zero. Ele traz um ecossistema inteligente com suporte nativo a **Hot Reload** direto no seu terminal.
 
 O objetivo é um só:
 
@@ -43,9 +40,9 @@ O objetivo é um só:
 
 <td width="50%">
 
-## 🚀 Inicialização rápida
+## 🔄 Hot Reload integrado
 
-Configure novos projetos em poucos segundos.
+Assista arquivos como `app.rb` e reinicie a aplicação automaticamente a cada salvamento.
 
 </td>
 
@@ -53,7 +50,7 @@ Configure novos projetos em poucos segundos.
 
 ## 📦 Gerenciamento do Gemfile
 
-Adicione Gems sem precisar editar o Gemfile manualmente.
+Adicione Gems dinamicamente sem precisar abrir e editar o arquivo manualmente.
 
 </td>
 
@@ -65,7 +62,7 @@ Adicione Gems sem precisar editar o Gemfile manualmente.
 
 ## ⚡ Instalação automática
 
-Instale todas as dependências automaticamente.
+Instale todas as novas dependências do projeto imediatamente via Bundle.
 
 </td>
 
@@ -73,7 +70,7 @@ Instale todas as dependências automaticamente.
 
 ## 💻 Interface Interativa
 
-Uma experiência agradável diretamente no terminal.
+Uma experiência visual minimalista em estilo "hacker" direto no seu terminal.
 
 </td>
 
@@ -85,15 +82,15 @@ Uma experiência agradável diretamente no terminal.
 
 ## 🎯 Mais produtividade
 
-Automatize tarefas repetitivas.
+Elimine gargalos de configuração ao iniciar novos scripts ou testar Gems.
 
 </td>
 
 <td>
 
-## 🔌 Arquitetura extensível
+## 🔌 Arquitetura de Microframework
 
-Preparado para crescer junto com seu projeto.
+Base leve e modular projetada para crescer junto com a sua aplicação.
 
 </td>
 
@@ -106,88 +103,76 @@ Preparado para crescer junto com seu projeto.
 # 📸 Demonstração
 
 ```text
-$ alfred
+==============================
+      BEM-VINDO AO ZIMBO     
+==============================
+Escolha uma opção:
+1. Criar arquivo
+2. Zimbo Run / auto-save
+5. Sair
+Opção: 2
 
-╭────────────────────────────────────────────╮
-│                                            │
-│              🤖 Alfred CLI                 │
-│                                            │
-╰────────────────────────────────────────────╯
+🚀 Zimbo Server Inicializado!
+Monitorando alterações no arquivo app.rb...
 
-✔ Projeto inicializado com sucesso!
+[Zimbo] Inicializando app.rb...
+Hello, World!
 
-O que deseja fazer?
-
-❯ Adicionar Gem
-  Configurar Projeto
-  Instalar Dependências
-  Sair
+🔄 Alteração detectada! Reinicializando o script...
+Hello, Zimbo!
 ```
 
 ---
 
 # 📦 Instalação
 
-### Compilando a Gem
+### Compilando a Gem localmente
 
 ```bash
-gem build alfred.gemspec
+gem build zimbo.gemspec
 ```
 
-### Instalando localmente
+### Adicionando ao seu projeto via Gemfile
 
-```bash
-gem 'alfred-flow', '>= 0.1.0'
+```ruby
+gem 'zimbo', path: '.'
 ```
 
 ### Quando publicada no RubyGems
 
 ```bash
-gem install alfred-flow
+gem install zimbo
 ```
 
 ---
 
 # 🚀 Começando
 
-Execute:
+Para inicializar a interface interativa da gem, execute:
 
 ```bash
-alfred
+bundle exec zimbo
 ```
 
-Ou inicialize diretamente um projeto:
+Se preferir rodar o script de menu diretamente sem compilar a estrutura binária:
 
 ```bash
-alfred init
+ruby lib/zimbo/main.rb
 ```
-
-Depois disso, basta seguir as instruções exibidas no terminal.
 
 ---
 
-# ❤️ Por que usar o Alfred?
+# ❤️ Por que usar o Zimbo?
 
-Todo desenvolvedor Ruby já passou por isso:
+Todo desenvolvedor Ruby passa por ciclos repetitivos: criar pastas, estruturar arquivos, monitorar processos e gerenciar dependências de teste. 
 
-- Criar um projeto.
-- Abrir o Gemfile.
-- Adicionar Gems.
-- Instalar dependências.
-- Configurar arquivos.
-- Repetir tudo novamente no próximo projeto.
-
-O Alfred elimina esse trabalho repetitivo para que você possa dedicar seu tempo ao que realmente importa:
-
-- Escrever código.
-- Resolver problemas.
-- Criar novas funcionalidades.
+O Zimbo elimina essas etapas mecânicas, unificando a automação de pacotes com um servidor de desenvolvimento reativo que se adapta ao seu editor de código.
 
 ---
 
 # 🎯 Filosofia
 
-O Alfred segue os princípios que fizeram o Ruby conquistar tantos desenvolvedores.
+O Zimbo segue os princípios fundamentais do ecossistema Ruby.
 
 ❤️ Felicidade do Desenvolvedor
 
@@ -205,108 +190,60 @@ O Alfred segue os princípios que fizeram o Ruby conquistar tantos desenvolvedor
 
 | Status | Funcionalidade |
 |---------|----------------|
-| ✅ | Interface Interativa |
-| ✅ | Gerenciamento do Gemfile |
-| ✅ | Instalação automática de Gems |
-| 🚧 | Templates de Projetos |
-| 🚧 | Sistema de Plugins |
-| 🚧 | Perfis de Configuração |
-| ⏳ | Gerador para Rails |
-| ⏳ | Gerador para Sinatra |
-| ⏳ | Gerador para Hanami |
-| ⏳ | Suporte ao Docker |
-| ⏳ | Autocompletar no Terminal |
+| ✅ | Interface Interativa (Menu CLI) |
+| ✅ | Gerenciamento automatizado do Gemfile |
+| ✅ | Servidor com monitoramento Hot Reload |
+| 🚧 | Templates estruturais de Projetos |
+| 🚧 | Biblioteca de Rotas HTTP (Baseada em Rack) |
+| 🚧 | Sistema de Plugins extensíveis |
+| ⏳ | Gerador de APIs minimalistas |
+| ⏳ | Autocompletar inteligente no Terminal |
 
 ---
 
 # 📁 Estrutura do Projeto
 
 ```text
-alfred/
+zimbo/
 │
 ├── bin/
+│   └── zimbo
 ├── lib/
-│   ├── alfred/
-│   ├── commands/
-│   ├── services/
-│   ├── ui/
-│   └── cli.rb
-│
-├── test/
+│   ├── zimbo/
+│   │   └── main.rb
+│   └── zimbo.rb
 │
 ├── Gemfile
-├── alfred.gemspec
-├── LICENSE
+├── zimbo.gemspec
+├── LICENSE.txt
 └── README.md
-```
-
----
-
-# 💡 Fluxo de Trabalho
-
-```text
-alfred init
-
-        ↓
-
-Criação do Projeto
-
-        ↓
-
-Configuração Inicial
-
-        ↓
-
-Gerenciamento das Gems
-
-        ↓
-
-Instalação das Dependências
-
-        ↓
-
-🚀 Projeto pronto para desenvolver
 ```
 
 ---
 
 # 🤝 Como contribuir
 
-Toda contribuição é muito bem-vinda!
-
-Se você deseja colaborar com o Alfred:
+Toda contribuição é muito bem-vinda! Se você deseja colaborar com a evolução do Zimbo:
 
 ```bash
-git clone https://github.com/alisson-mendes-dev/alfred-assistente-ruby.git
+git clone https://github.com
 
-cd alfred
+cd ruby_zimbo
 
 bundle install
 ```
 
 Depois:
-
 - Faça um Fork do projeto.
-- Crie uma nova branch.
-- Implemente sua melhoria.
-- Faça um Commit.
-- Envie um Pull Request.
-
----
-
-# 🌟 Visão do Projeto
-
-O Alfred nasceu para simplificar o desenvolvimento Ruby.
-
-A ideia é evoluir continuamente até se tornar um verdadeiro ecossistema de automação para projetos Ruby, permitindo criar, configurar e manter aplicações com poucos comandos e uma excelente experiência de uso.
+- Crie uma nova branch para a sua feature (`git checkout -b feature/minha-melhoria`).
+- Implemente e teste suas alterações.
+- Envie um Pull Request detalhado!
 
 ---
 
 # 📜 Licença
 
-Distribuído sob a licença **MIT**.
-
-Consulte o arquivo **LICENSE** para mais informações.
+Distribuído sob a licença **MIT**. Consulte o arquivo `LICENSE.txt` para mais informações.
 
 ---
 
@@ -314,13 +251,12 @@ Consulte o arquivo **LICENSE** para mais informações.
 
 ## ⭐ Gostou do projeto?
 
-Se o Alfred foi útil para você, considere deixar uma **⭐ Star** no repositório.
+Se o Zimbo facilitou seu fluxo de desenvolvimento, considere deixar uma **⭐ Star** no repositório.
 
-Isso ajuda o projeto a alcançar mais desenvolvedores da comunidade Ruby.
+Isso ajuda o projeto a alcançar mais desenvolvedores da comunidade Ruby!
 
 <br>
 
 **Feito com ❤️ utilizando Ruby.**
 
 </div>
-````
