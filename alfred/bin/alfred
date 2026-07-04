@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
 require 'alfred'
 
-# Se você criou uma classe chamada App dentro do módulo Alfred:
-Alfred::App.new.iniciar
+Alfred::Alfred.new.iniciar

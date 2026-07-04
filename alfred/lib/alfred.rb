@@ -1,2 +1,2 @@
-require "alfred/classes"
-require "alfred/main" # ou o nome que você der para o arquivo com a lógica do menu
+require "alfred/classes" # Carrega a classe Alfred
+require "alfred/main"    # Carrega a lógica do seu menu
