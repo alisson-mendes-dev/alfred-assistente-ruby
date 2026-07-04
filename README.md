@@ -34,6 +34,7 @@ O objetivo é um só:
 
 > **Economizar seu tempo para que você possa focar no desenvolvimento do seu software.**
 
+
 ---
 
 # ✨ Funcionalidades
@@ -45,7 +46,7 @@ O objetivo é um só:
 
 ## 🚀 Inicialização rápida
 
-Configure novos projetos em poucos segundos.
+Configure novos projetos em poucos segundos pelo próprio terminal.
 
 </td>
 
@@ -118,9 +119,7 @@ $ alfred
 
 O que deseja fazer?
 
-❯ Adicionar Gem
-  Configurar Projeto
-  Instalar Dependências
+❯ Criar arquivo
   Sair
 ```
 
@@ -129,18 +128,6 @@ O que deseja fazer?
 # 📦 Instalação
 
 ### Compilando a Gem
-
-```bash
-gem build alfred.gemspec
-```
-
-### Instalando localmente
-
-```bash
-gem 'alfred-flow', '>= 0.1.0'
-```
-
-### Quando publicada no RubyGems
 
 ```bash
 gem install alfred-flow
@@ -153,13 +140,13 @@ gem install alfred-flow
 Execute:
 
 ```bash
-alfred
+alfred-flow 
 ```
 
 Ou inicialize diretamente um projeto:
 
 ```bash
-alfred init
+alfred-flow init
 ```
 
 Depois disso, basta seguir as instruções exibidas no terminal.
@@ -183,6 +170,7 @@ O Alfred elimina esse trabalho repetitivo para que você possa dedicar seu tempo
 - Resolver problemas.
 - Criar novas funcionalidades.
 
+Com o Alfred-Flow é possível criar uma arquivo completo de gem só pelo terminal.
 ---
 
 # 🎯 Filosofia
