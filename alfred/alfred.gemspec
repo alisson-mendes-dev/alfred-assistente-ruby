@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "Um assistente CLI para automação de fluxo de trabalho."
   spec.description   = "Alfred é uma ferramenta para automatizar a criação de arquivos e configuração de dependências em projetos Ruby."
   spec.homepage      = "https://github.com/alisson-mendes-dev/alfred-assistente-ruby" # Se for colocar no GitHub
-  spec.license       = "MIT"
+  spec.license       = "MIT" 
 
   # Especifica os arquivos que serão incluídos na gem
   spec.files         = Dir["lib/**/*.rb", "bin/*", "README.md", "LICENSE.txt"]
