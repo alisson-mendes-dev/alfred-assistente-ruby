@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+# Adiciona a pasta lib ao caminho de busca do Ruby
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
+
+# Carrega o arquivo principal do Zimbo
+require 'zimbo/main'
+
+# Inicializa o menu que você construiu
+Zimbo::Actions.menu
