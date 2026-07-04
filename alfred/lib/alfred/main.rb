@@ -1,9 +1,19 @@
+# O módulo Alfred::Actions é o núcleo da automação do seu assistente,
+# responsável pela interface de menu e gerenciamento automatizado do Gemfile.
+#
+# @author Alisson
+# @since 0.1.0
+
 module Alfred
   module Actions
     # Definição das cores para o visual "hacker"
     CYAN = "\e[36m"
     RESET = "\e[0m"
 
+
+    # Exibe o menu principal de interação no terminal e gerencia o fluxo de navegação.
+    #
+    # @return [void]
     def self.menu
       puts "\n#{CYAN}=============================="
       puts "      BEM-VINDO AO ALFRED     "
@@ -25,6 +35,13 @@ module Alfred
         self.menu
       end
     end
+
+    # Gerencia a adição interativa de novas gems ao Gemfile e executa o bundle install.
+    #
+    # @example Adicionando gems via terminal:
+    #   Alfred::Actions.criar_gem
+    #
+    # @return [void] O método modifica o arquivo Gemfile local e instala as dependências.
 
     def self.criar_gem 
       path = File.join(Dir.pwd, 'Gemfile')
@@ -54,6 +71,9 @@ module Alfred
       puts "Processo encerrado. Seu Gemfile foi atualizado!"
     end
 
+    # Verifica a existência ou cria o arquivo Gemfile na pasta de execução atual.
+    #
+    # @return [void] Após a criação, redireciona automaticamente para o método de adicionar gems.
     def self.criar_arquivo 
       path = File.join(Dir.pwd, 'Gemfile')
       puts "Você está na: #{Dir.pwd}"
