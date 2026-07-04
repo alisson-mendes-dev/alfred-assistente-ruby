@@ -106,24 +106,15 @@ Preparado para crescer junto com seu projeto.
 
 # 📸 Demonstração
 
-```text
-$ alfred
 
-╭────────────────────────────────────────────╮
-│                                            │
-│              🤖 Alfred CLI                 │
-│                                            │
-╰────────────────────────────────────────────╯
+<details>
+<summary>👀 Ver demonstração do Alfred em execução</summary>
 
-✔ Projeto inicializado com sucesso!
+![Alfred Terminal](https://i.ibb.co/T6qyG3s/alfred-terminal.png)
 
-O que deseja fazer?
+</details>
 
-❯ Criar arquivo
-  Sair
 ```
-
----
 
 # 📦 Instalação
 
