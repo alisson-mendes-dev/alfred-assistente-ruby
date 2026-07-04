@@ -137,13 +137,13 @@ gem build alfred.gemspec
 ### Instalando localmente
 
 ```bash
-gem install ./alfred-0.1.0.gem
+gem 'alfred-flow', '>= 0.1.0'
 ```
 
 ### Quando publicada no RubyGems
 
 ```bash
-gem install alfred
+gem install alfred-flow
 ```
 
 ---
